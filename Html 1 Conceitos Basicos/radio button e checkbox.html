@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Pizza</title>
+</head>
+<body>
+    <form method = "post"> <!--Como tem varios valores no opcional tem que ser-->
+        <!--enviado como modo post-->
+        <h3>Você selecionou: Pizza de Calabresa</h3>
+        <p>Quais Opcições você deseja?</p>
+        <!--No checkbox quando for mando para o servidor-->
+        <!--vai o opcional + o value de todos os elementos checkbox-->
+        <!--[] server para avisar ao back-and que é uma lista-->
+        <input type="checkbox" disabled name="opcional[]" value="queijo"> + queijo<br/> <!---disabled deixa desabilitado um campo-->
+        <input type="checkbox" name="opcional[]" value="Calabresa"> + calabresa<br/>
+        <input type="checkbox" name="opcional[]" value="cebola"> + cebola<br/>
+        <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona<br/>
+        
+        <p>Borda recheada</p>
+        <input type="radio" name="borda" value="queijo">Sim<br/>
+        <input type="radio" name="borda" value="queijo">Não<br/>
+        <p>Bebida</p>
+        <input type="radio" name="bebida" value="suco">Suco<br/>
+        <input type="radio" name="bebida" value="refrigerante">refrigerante<br/>
+        <input type="radio" name="bebida" value="agua">Água<br/>
+        <input type="radio" name="bebida" value="nenhum">Nenhuma<br/> <br/>
+        <button type="submit">Enviar pedido</button>
+    </form>
+</body>
+</html>
