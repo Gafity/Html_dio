@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas</title>
+    <style>
+        table tr:nth-child(even){
+            background-color: burlywood;
+
+        }
+        table tr:hover td{
+            background-color: blue;
+
+        }
+    </style>
+</head>
+<body>
+    <!--<table summary="Turma Dio" border="1" width="250" cellspacing="15" cellpadding="25" align="center">-->
+    <table summary="Turma Dio" border="1" width="250"  align="center">
+        <caption>Tabela de idade dos alunos dio</caption>
+        <thead>
+            <tr>
+                <!--Como regra de acessibilidade o nome da tabela tem que ser o menor possivel-->
+                <!--e para colocor uma descrição um pouco maior, coloca-se no title-->
+                <th title="Nome completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr id="1">
+                <td>Diogo</td>
+                <td>37</td>
+            </tr>
+            <tr id="2">
+                <td>Carlos</td>
+                <td>28</td>
+            </tr>
+            <tr id="3">
+                <td>Geovana</td>
+                <td>80</td>
+            </tr>
+            <tr id="4">
+                <td>Josefa</td>
+                <td>60</td>
+            </tr>
+            <tr id="5">
+                <td>Mario</td>
+                <td>45</td>
+            </tr>
+            <tr id="6">
+                <td>Andre</td>
+                <td>72</td>
+            </tr>
+        </tbody>
+        <tfooot>
+            <tr>
+                <td>total</td>
+                <td>6</td>
+            </tr>
+        </tfooot>
+    </table>
+    
+<!--table cria a tabela-->
+<!--th é o cabeçalho-->
+<!--tr a linha-->
+<!--td a coluna-->
+<!--e para facilitar a leitura da tabela voce pode colocar tudo isso dentro de um corpo-->
+<!--tbody para o corpo do html e thead para a cabeça do tabela-->
+<!--tfoot é o roda pé do site-->
+<!--caption é a descrição da tabela-->
+<!--summary é mais usado para deficientes auditivos pois não aparece para o usuario final como caption-->
+</body>
+</html>

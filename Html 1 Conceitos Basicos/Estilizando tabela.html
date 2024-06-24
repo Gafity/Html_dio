@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas</title>
+    <style>
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+        table{
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            /* border: solid 1px black; */
+        }
+        table tfoot td{
+            background-color: lightgrey;
+        }
+        /*even pega tudo que  é par*/
+        table tbody tr:nth-child(even) td{
+            background-color: aliceblue;
+            
+        }
+        table tbody tr:hover td{
+            background-color: rgb(113, 113, 114);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--<table summary="Turma Dio" border="1" width="250" cellspacing="15" cellpadding="25" align="center">-->
+    <table summary="Turma Dio" width="250"  align="center" cellspacing="0">
+        <caption>Tabela de idade dos alunos dio</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Minha tabela</th><!--rowspan para mesclar linhas-->
+            </tr>
+            <tr>
+                <!--Como regra de acessibilidade o nome da tabela tem que ser o menor possivel-->
+                <!--e para colocor uma descrição um pouco maior, coloca-se no title-->
+                <th title="Nome completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr id="1">
+                <td>Diogo</td>
+                <td>37</td>
+            </tr>
+            <tr id="2">
+                <td>Carlos</td>
+                <td>28</td>
+            </tr>
+            <tr id="3">
+                <td>Geovana</td>
+                <td>80</td>
+            </tr>
+            <tr id="4">
+                <td>Josefa</td>
+                <td>60</td>
+            </tr>
+            <tr id="5">
+                <td>Mario</td>
+                <td>45</td>
+            </tr>
+            <tr id="6">
+                <td>Andre</td>
+                <td>72</td>
+            </tr>
+        </tbody>
+        <tfooot>
+            <tr>
+                <td>total</td>
+                <td>6</td>
+            </tr>
+        </tfooot>
+    </table>
+    
+<!--table cria a tabela-->
+<!--th é o cabeçalho-->
+<!--tr a linha-->
+<!--td a coluna-->
+<!--e para facilitar a leitura da tabela voce pode colocar tudo isso dentro de um corpo-->
+<!--tbody para o corpo do html e thead para a cabeça do tabela-->
+<!--tfoot é o roda pé do site-->
+<!--caption é a descrição da tabela-->
+<!--summary é mais usado para deficientes auditivos pois não aparece para o usuario final como caption-->
+</body>
+</html>

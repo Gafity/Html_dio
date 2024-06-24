@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select e Seus tipos</title>
+</head>
+<body>
+    <form method="get">
+        <label>Nome:</label><input type="text" name="name"><br/>
+        
+        <!--Selectbax é um campo predefinido com itens que você pode escolher-->
+        <!--Usa se a tag select com sua tag filha option-->
+        <label>Cargo:</label>
+            <select name="role">
+                    <option value="">Escolha um cargo</option>
+                    <option selected value="gerente">Gerente</option>
+                    <option value="diretor">Diretor</option>
+                    <option value="presidente">Presidente</option>
+            </select><br/>
+        
+        <!--Selected já deixa um option pré-selecionado-->
+        <!--Multiple permite que você escolha varios itens dentro de um selectbax-->
+
+        <label>Assunto</label><input type="text" name="subject"><br/>
+        <button type="submit">Enviar</button><br/>
+        
+        <label>colhendo varios itens</label>
+        <select name="cozinha" multiple>
+            <option value="Prato">Prato</option>
+            <option value="Talhares">Talheres</option>
+            <option values="Copo">Copo</option>
+        </select><br/>
+
+        <label>Mensagem</label><br/>
+            <textarea name="mensagem" rows="30" cols="50"></textarea> <!--Caixa de mensagem-->
+        
+    </form>
+</body>
+</html>
