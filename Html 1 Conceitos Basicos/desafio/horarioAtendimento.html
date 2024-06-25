@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template - Utilizar como modelo</title>
+    <title>Horário - Novo Sol</title>
     <link rel="stylesheet" href="base.css">
+    <style>
+        table thead th{
+            background-color: rgb(72, 51, 119);
+            color: rgb(218, 190, 31);
+        }
+        table{
+            box-shadow: 0px 0px 5px 0px rgba(72, 51, 119.75);
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(72, 51, 119.75);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(72, 51, 119.75);
+            border: solid 1px rgb(72, 51, 119);
+        }
+        table tfoot td{
+            background-color: lightgrey;
+        }
+        /*even pega tudo que  é par*/
+        table tbody tr{
+            background-color: rgb(72, 51, 119);
+            color: rgb(218, 190, 31);
+            
+        }
+
+
+        table tbody tr:hover td{
+            background-color: rgb(113, 113, 114);
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
@@ -22,7 +49,7 @@
         <div class="main">
             <div class="header">
                 <hr/>
-                <img src="sobreHeadHtml.png" alt="logo da marca" title="Clinica Novo Sol" width="700"
+                <img src="horarioHead.png" alt="logo da marca" title="Clinica Novo Sol" width="700"
                 style="display: block; margin: 0 auto;" height="200">
                 <hr/>
                 <!-- Aqui vai o seu header -->
@@ -30,7 +57,85 @@
     
             <div class="content">
                 <!-- Aqui vai o seu conteúdo -->
+                
+
+                <table summary="Horário de Atendimento" align="center" border="1"> 
+                    <caption><font color="yellow">Clinica Novo Sol</font></caption>
+                    <thead>
+                        <tr>
+                            <th colspan="4">Horário de Atendimento</th>
+                        </tr>
+                        <tr>
+                            <th>Serviço</th>
+                            <th>Segunda a Sexta</th>
+                            <th>Sábados</th>
+                            <th>Feriados</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td align="center">Clínica geral</td>
+                            <td align="center">08h - 19h</td>
+                            <td align="center">08h - 14</td>
+                            <td align="center">08 - 14</td>
+                        </tr>
+
+                        <tr>
+                            <td align="center">Psicologa</td>
+                            <td align="center">08h - 19h</td>
+                            <td align="center">08h - 14</td>
+                            <td align="center">08 - 14</td>
+                        </tr>
+
+                        <tr>
+                            <td align="center">Vacinação</td>
+                            <td align="center">08h - 19h</td>
+                            <td align="center">08h - 14</td>
+                            <td align="center"> - </td>
+                        </tr>
+                        <tr>
+                            <td align="center">Oftalmologista</td>
+                            <td align="center">08h - 19h</td>
+                            <td align="center">08h - 14</td>
+                            <td align="center"> - </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table summary="Tabela de Preço" align="center" border="1"> 
+                    <thead>
+                        <tr>
+                            <th colspan="4">Preço</th>
+                        </tr>
+                        <tr>
+                            <th>Clínico geral</th>
+                            <th>Psicologa</th>
+                            <th>Vacinação</th>
+                            <th>Oftalmologista</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td align="center">55,00</td>
+                            <td align="center">150,00</td>
+                            <td align="center">30,00</td>
+                            <td align="center">73,63</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <p>
+                    <font color="yellow">Todos os valores podem ser parcelados em 12x sem juros.</font><br/>
+                    Se está procurando preços mais em conta, entre em <a href="contato.html">contato</a> com a gente para está por dentro de nossos planos <strong>custo benefício</strong><br/>
+                    <i>Todos valores recebem reajuste anual</i>
+                    
+                </p>
+                
+
             </div>
+            
     
             <div class="footer">
                 <fieldset>
