@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Html 5 - Estrutural</title>
+    <style>
+        nav ul{
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul li a{
+            padding: 10px 15px;
+            color: blue;
+            text-decoration: none;
+            border-radius: 5px 0;
+        }
+        nav ul li a:hover{
+            color: white;
+            background-color: blue;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="tel:+5515555222">telefone</a></li><!--Com href="tel" vai abrir a opção no link para você ligar!-->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--main é onde vai ficar o conteudo principla da pagina e não pode haver mais por pagina-->
+        <section></section> <!--São seções de informação e popdem haver varias-->
+        <section></section>
+        <section></section>
+        <section></section>
+
+        <!--No article é destinado para você colocar realmente o artigo dentro-->
+        <article>
+            <p>Qual o seu prato favorito?</p>
+            <article>É churrasco<!--esse article semanticamente está relacionado ao article 1--></article>
+            <!--Uma tag que existe para auxiliar o article é o <time datetime></time> e <time pubdate></time> para especificar a publicação-->
+            <p>Artigo publicado em <time pubdate>21/01/2022 19:00</time></p>
+            <blockquote cite="http://wikipedia.com"> <!--Isso ajuda os motores de busca-->
+                <!--Pode ser como sitação já que da um espaço de um tab-->
+                Estrela marta é referente a uma estrela bem mais velha que o nosso sol
+            </blockquote>
+            <!--já a tag <q> é usada para citação pequena que não vai quebrar a linha, diferente do blcckquote. Veja como funciona-->
+            <p>Segundo estudos <q cite="http://wikipedia.com">dormir cedo trás grandes benefícios</q></p>
+        </article>
+        
+        <aside><!--É um sunto que não tem haver com o assunto principal da pagina/podendo ser assuntos auxiliares--></aside>
+    </main>
+
+    <footer>
+        <address><!--é usada para indereço e só deixa o texto em italico --></address>
+    </footer>
+
+</body>
+</html>
